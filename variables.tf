@@ -1,5 +1,5 @@
 variable "name" {
-  
+  default = "gfdresc"
 }
 
 variable "account_tier" {
