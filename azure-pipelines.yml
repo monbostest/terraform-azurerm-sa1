@@ -23,3 +23,15 @@ steps:
     command: 'apply'
     commandOptions: '-var client_id=$(CLIENT_ID)  -var client_secret=$(CLIENT_SECRET)'
     allowTelemetryCollection: true
+- task: TerraformCLI@0
+  inputs:
+    command: 'init'
+    backendType: 'azurerm'
+    backendServiceArm: 'Free Trial(0c6b065f-5b32-47b7-b55f-6e6cbe2eb88c)'
+    ensureBackend: true
+    backendAzureRmResourceGroupName: 'newsA'
+    backendAzureRmResourceGroupLocation: 'East Asia'
+    backendAzureRmStorageAccountName: 'dsxswesz'
+    backendAzureRmContainerName: 'dcsew'
+    backendAzureRmKey: 'tfstate'
+    allowTelemetryCollection: true
