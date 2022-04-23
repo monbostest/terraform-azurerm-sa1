@@ -21,4 +21,5 @@ steps:
 - task: TerraformCLI@0
   inputs:
     command: 'apply'
+    commandOptions: '''-var client_id=$(CLIENT_ID)  -var client_secret=$(CLIENT_SECRET)'''
     allowTelemetryCollection: true
