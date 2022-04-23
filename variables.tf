@@ -21,3 +21,11 @@ variable "location" {
     default = "EAST US 2"
   
 }
+
+variable "client_id" {}
+
+
+variable "client_secret" {}
+
+
+
